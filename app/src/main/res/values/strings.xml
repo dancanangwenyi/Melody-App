@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Melodies</string>
+    <string name="name">Enter the note name</string>
+    <string name="compose">Compose here...............</string>
+    <string name="ip">Enter the Ip[ address</string>
+    <string name="send">send</string>
+    <string name="realTime">Real Time Notes</string>
+    <string name="playlist">Playlist</string>
+    <string name="composeNote">Compose Notes</string>
+</resources>

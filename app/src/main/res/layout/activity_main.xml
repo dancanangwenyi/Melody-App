@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        android:src="@drawable/music" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/compose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorPink"
+            android:onClick="Compose"
+            android:padding="4dp"
+            android:text="@string/composeNote"
+            android:textColor="@color/colorBrown"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorPink"
+            android:padding="4dp"
+            android:text="@string/playlist"
+            android:textColor="@color/colorBrown"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/realButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/colorPink"
+            android:padding="8dp"
+            android:text="@string/realTime"
+            android:textColor="@color/colorBrown"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</LinearLayout>
