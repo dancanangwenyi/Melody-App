@@ -4,16 +4,41 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.dancan.serverclienttester.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        Button buttonPlaylist = findViewById(R.id.playlist);
+        Button buttonCompose = findViewById(R.id.compose);
+        Button buttonRealTime = findViewById(R.id.realButton);
+        buttonPlaylist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PlaylistActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonCompose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ComposeActivity.class);
+                startActivity(intent);
+            }
+        });
+        buttonRealTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RealtimeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 
     /**
