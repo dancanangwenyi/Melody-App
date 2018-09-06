@@ -2,9 +2,11 @@
     <string name="app_name">Melodies</string>
     <string name="name">Enter the note name</string>
     <string name="compose">Compose here...............</string>
-    <string name="ip">Enter the Ip[ address</string>
+    <string name="ip">Enter the Ip address</string>
     <string name="send">send</string>
     <string name="realTime">Real Time Notes</string>
     <string name="playlist">Playlist</string>
     <string name="composeNote">Compose Notes</string>
+    <string name="debug">Debug information in case connection fails</string>
+    <string name="msg">Type Message to send to server</string>
 </resources>
