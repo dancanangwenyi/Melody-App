@@ -60,7 +60,10 @@ public class RealtimeActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View view) throws NullPointerException {
         AudioManager audio = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        int currentVolume = audio.getStreamVolume(AudioManager.STREAM_MUSIC);
+        double currentVolum = (double) audio.getStreamVolume(AudioManager.STREAM_MUSIC);
+        double  Volume = (currentVolum/15.0)*100.0;
+        int currentVolume = (int)Volume;
+        Log.v("VOL",currentVolume+"");
         switch (view.getId()) {
             case R.id.buttonSend:
                 sendMessage(messageToBeSent.getText().toString());
@@ -68,62 +71,62 @@ public class RealtimeActivity extends AppCompatActivity implements View.OnClickL
                 connectionError.setText("");
                 break;
             case R.id.buttonA:
-                sendMessage("A" + currentVolume + "255");
+                sendMessage("A," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonB:
-                sendMessage("B" + currentVolume + "255");
+                sendMessage("B," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonC:
-                sendMessage("C" + currentVolume + "255");
+                sendMessage("C," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonD:
-                sendMessage("D" + currentVolume + "255");
+                sendMessage("D," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonE:
-                sendMessage("E" + currentVolume + "255");
+                sendMessage("E," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonF:
-                sendMessage("F" + currentVolume + "255");
+                sendMessage("F," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonG:
-                sendMessage("G" + currentVolume + "255");
+                sendMessage("G," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonH:
-                sendMessage("H" + currentVolume + "255");
+                sendMessage("H," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonI:
-                sendMessage("I" + currentVolume + "255");
+                sendMessage("I," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonJ:
-                sendMessage("J" + currentVolume + "255");
+                sendMessage("J," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonK:
-                sendMessage("K" + currentVolume + "255");
+                sendMessage("K," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
             case R.id.buttonL:
-                sendMessage("L" + currentVolume + "255");
+                sendMessage("L," + currentVolume + ",10");
                 messageToBeSent.setText("");
                 connectionError.setText("");
                 break;
