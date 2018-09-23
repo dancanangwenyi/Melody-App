@@ -36,6 +36,7 @@
             android:hint="@string/msg"
             android:inputType="textAutoComplete" />
 
+
         <Button
             android:id="@+id/buttonSend"
             android:layout_width="50dp"
@@ -43,6 +44,123 @@
             android:layout_gravity="center"
             android:layout_margin="8dp"
             android:background="@drawable/music" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorPink"
+                android:text="@string/A" />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonA"
+                android:background="@color/colorPink"
+                android:text="@string/B" />
+
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonB"
+                android:background="@color/colorPink"
+                android:text="@string/C" />
+
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonC"
+                android:background="@color/colorPink"
+                android:text="@string/D" />
+
+            <Button
+                android:id="@+id/buttonE"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonD"
+                android:background="@color/colorPink"
+                android:text="@string/E" />
+
+            <Button
+                android:id="@+id/buttonF"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonE"
+                android:background="@color/colorPink"
+                android:text="@string/F" />
+
+            <Button
+                android:id="@+id/buttonG"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/buttonA"
+                android:layout_margin="8dp"
+                android:background="@color/colorPink"
+                android:text="@string/G" />
+
+            <Button
+                android:id="@+id/buttonH"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/buttonB"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonG"
+                android:background="@color/colorPink"
+                android:text="@string/H" />
+
+            <Button
+                android:id="@+id/buttonI"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/buttonB"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonH"
+                android:background="@color/colorPink"
+                android:text="@string/I" />
+
+            <Button
+                android:id="@+id/buttonJ"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/buttonB"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonI"
+                android:background="@color/colorPink"
+                android:text="@string/J" />
+
+            <Button
+                android:id="@+id/buttonK"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/buttonB"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonJ"
+                android:background="@color/colorPink"
+                android:text="@string/K" />
+
+            <Button
+                android:id="@+id/buttonL"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/buttonB"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@+id/buttonK"
+                android:background="@color/colorPink"
+                android:text="@string/L" />
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/serverReply"
